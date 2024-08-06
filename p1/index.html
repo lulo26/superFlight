@@ -10,16 +10,22 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="./img/logo100px.png" type="image/x-icon" />
     <link rel="stylesheet" href="./style.css" />
   </head>
+
   <body>
+    <!-- Header -->
     <div class="header">
       <div class="flex-container">
         <div><img src="./img/logo100px.png" alt="" srcset="" /></div>
         <div><h1>SuperFlight</h1></div>
       </div>
     </div>
+
+    <!-- Main -->
     <div class="containerMain" id="main_section">
+      <!-- Right side -->
       <div class="aside">
         <img src="./img/world_map_PNG.png" id="WordlMapImg" alt="" />
         <h3 class="mt-5">seleccione su destino</h3>
@@ -29,33 +35,64 @@
           id="FlightSelect"
         >
           <option selected>seleccione</option>
-          <option value="1" id="selec1">Alemania</option>
-          <option value="2" id="selec2">Estados Unidos</option>
-          <option value="3" id="selec3">Nigeria</option>
-          <option value="3" id="selec4">paris</option>
+          <option value="1" id="select1">Alemania</option>
+          <option value="2" id="select2">Estados Unidos</option>
+          <option value="3" id="select3">Nigeria</option>
+          <option value="3" id="select4">paris</option>
         </select>
       </div>
+
+      <!-- Main Container-->
       <div class="main">
-        <h2>Cantidad de pasajeros</h2>
+        <h3>Por favor ingrese la cantidad de pasajeros</h3>
         <input
           class="form-control mt-3"
-          id="CantPas"
+          id="cantPas"
           type="text"
           placeholder="Ingrese aquí la cantidad"
           aria-label="default input example"
         />
+        <h3 class="mt-3">Ingrese el peso de las maletas</h3>
+        <input
+          class="form-control mt-3"
+          id="weightLuggage"
+          type="text"
+          placeholder="peso de las maletas en kg"
+          aria-label="default input example"
+        />
+        <h3 class="mt-3">Seleccione el tipo de silla</h3>
+        <select
+          class="form-select mt-3"
+          aria-label="Default select example"
+          id="ChairSelect"
+        >
+          <option selected>seleccione</option>
+          <option value="5" id="select5">Normal</option>
+          <option value="6" id="select6">Ejecutiva</option>
+          <option value="7" id="select7">VIP</option>
+        </select>
+
         <div class="d-grid gap-2 col-6 mx-auto mt-3">
-          <button class="btn btn-primary" type="button">
+          <button class="btn btn-primary" type="button" id="BtnResult">
             liquidar tiquete
           </button>
           <img src="./img/ticketIMG.png" alt="" />
         </div>
+        <div class="sectionInfo">
+          <h3>Información de su tiquete:</h3>
+          <div class="result" id="result"></div>
+        </div>
       </div>
+
+      <!-- Left Side -->
       <div class="asideRight">
         <h2>Prueba tu suerte</h2>
         <img src="./img/LetsGoGambling.png" alt="" />
       </div>
     </div>
+    <!-- End of main -->
+
+    <!-- Footer -->
     <div class="footer">
       <p>Todos los derechos reservados.</p>
     </div>
