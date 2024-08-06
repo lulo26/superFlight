@@ -16,21 +16,26 @@ let priceCountry;
 let priceChair;
 let priceLuggage;
 let extrakg;
+let countrySelect;
 
 FlightSelect.addEventListener("click", (e) => selectCountry());
 
 function selectCountry() {
   if (selection == "1") {
     priceCountry = 520000;
+    countrySelect = "Alemania";
   }
   if (selection == "2") {
     priceCountry = 985000;
+    countrySelect = "Estados Unidos";
   }
   if (selection == "3") {
     priceCountry = 62000;
+    countrySelect = "Nigeria";
   }
   if (selection == "4") {
     priceCountry = 785000;
+    countrySelect = "Paris";
   }
 }
 
@@ -44,7 +49,7 @@ function selectChair() {
     priceChair = 20000;
   }
   if (selection2 == "7") {
-    priceChair = 40000 + " + copa de whiskey";
+    priceChair = 40000;
   }
 }
 
@@ -59,4 +64,10 @@ if (weightLuggage > 51) {
 
 let total = priceCountry * cantPas + priceLuggage + priceChair;
 
-BtnResult.addEventListener("click", (e) => {});
+BtnResult.addEventListener("click", (e) => {
+  <p>
+    lugar seleccionado: countrySelect
+    <br />
+    total a pagar: total
+  </p>;
+});
