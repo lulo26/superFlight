@@ -1,5 +1,3 @@
-window.addEventListener("click", (e) => console.log(e));
-
 // declare selectors, inputs and buttons//
 let FlightSelect = document.querySelector("#FlightSelect");
 let selection = FlightSelect.options[FlightSelect.selectedIndex].value;
@@ -8,6 +6,7 @@ let ChairSelect = document.querySelector("#ChairSelect");
 let selection2 = ChairSelect.options[ChairSelect.selectedIndex].value;
 
 let cantPas = document.getElementById("cantPas").value;
+cantPas = parseInt(cantPas);
 let weightLuggage = document.getElementById("weightLuggage").value;
 let BtnResult = document.getElementById("BtnResult");
 
@@ -18,9 +17,10 @@ let priceLuggage;
 let extrakg;
 let countrySelect;
 
-FlightSelect.addEventListener("click", (e) => selectCountry());
+FlightSelect.addEventListener("click", selectCountry);
 
 function selectCountry() {
+  console.log(":3");
   if (selection == "1") {
     priceCountry = 520000;
     countrySelect = "Alemania";
@@ -39,7 +39,7 @@ function selectCountry() {
   }
 }
 
-ChairSelect.addEventListener("click", (e) => selectChair());
+ChairSelect.addEventListener("click", selectChair);
 
 function selectChair() {
   if (selection2 == "5") {
@@ -62,15 +62,14 @@ if (weightLuggage > 51) {
   priceLuggage = 15000 * extrakg;
 }
 
-let total;
-total = priceCountry * cantPas + priceLuggage + priceChair;
-
 BtnResult.addEventListener("click", (e) => {
-  console.log(selection2);
-  result.innerHTML =
-    "<p> lugar seleccionado: " +
-    countrySelect +
-    "<br /> total a pagar: " +
-    total +
-    " </p> ";
+  selectChair();
+  selectCountry();
+  let total = priceCountry * cantPas + priceLuggage + priceChair;
+  console.log(priceCountry);
+  console.log(cantPas);
+  console.log(priceLuggage);
+  console.log(priceChair);
+  console.log(total);
+  result.innerHTML = `<p> lugar seleccionado:${countrySelect} <br /> total a pagar: ${total} </p>`;
 });
