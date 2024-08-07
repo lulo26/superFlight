@@ -62,12 +62,15 @@ if (weightLuggage > 51) {
   priceLuggage = 15000 * extrakg;
 }
 
-let total = priceCountry * cantPas + priceLuggage + priceChair;
+let total;
+total = priceCountry * cantPas + priceLuggage + priceChair;
 
 BtnResult.addEventListener("click", (e) => {
-  <p>
-    lugar seleccionado: countrySelect
-    <br />
-    total a pagar: total
-  </p>;
+  console.log(selection2);
+  result.innerHTML =
+    "<p> lugar seleccionado: " +
+    countrySelect +
+    "<br /> total a pagar: " +
+    total +
+    " </p> ";
 });
