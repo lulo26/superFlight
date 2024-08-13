@@ -92,7 +92,6 @@ a:link {
 }
 
 .main2 .card {
-  margin-left: 200px;
   margin-top: 40px;
   transition: 0.3s ease-out 10ms;
 }
@@ -100,7 +99,4 @@ a:link {
 .main2 .card:hover {
   box-shadow: 0 8px 8px 8px rgb(157, 160, 161);
   transform: scale(1.1);
-}
-
-.main2 .col .card {
 }
