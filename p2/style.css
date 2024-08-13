@@ -1,8 +1,11 @@
 body {
   background-color: gainsboro;
+  font-family: "Futura Std";
+  letter-spacing: 1px;
 }
 
 .header {
+  display: flex;
   background-color: #1f5886;
   padding: 1%;
   width: 100%;
@@ -10,6 +13,11 @@ body {
   padding: 1vh;
   align-content: center;
   color: white;
+}
+
+.header > h3 {
+  font-weight: bolder;
+  padding-top: 20px;
 }
 
 .navbar {
@@ -20,4 +28,11 @@ body {
   padding: 1vh;
   align-content: center;
   box-shadow: 0 10px 5px 1px rgb(157, 160, 161);
+}
+
+.nav-item,
+.nav-link {
+  color: #1f5886;
+  font-weight: bold;
+  font-size: 20px;
 }
