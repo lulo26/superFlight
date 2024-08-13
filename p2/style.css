@@ -81,3 +81,26 @@ body {
 a:link {
   text-decoration: none;
 }
+
+/* pizzas main */
+
+.main2 .carousel {
+  padding-left: 200px;
+  padding-right: 200px;
+  background-color: #d1d6da;
+  box-shadow: 0 10px 5px 1px rgb(157, 160, 161);
+}
+
+.main2 .card {
+  margin-left: 200px;
+  margin-top: 40px;
+  transition: 0.3s ease-out 10ms;
+}
+
+.main2 .card:hover {
+  box-shadow: 0 8px 8px 8px rgb(157, 160, 161);
+  transform: scale(1.1);
+}
+
+.main2 .col .card {
+}
