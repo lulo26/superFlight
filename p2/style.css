@@ -60,7 +60,9 @@ body {
 }
 
 .main .card {
-  max-height: 180px;
+  height: 180px;
+  transform: scale(1);
+  transition: 0.5s;
 }
 
 .main .card .card-title {
@@ -70,12 +72,15 @@ body {
   text-align: left;
   padding-top: 30px;
   padding-left: 100px;
-  transition: font-size 0.1s ease-out 10ms;
+  transform: scale(1);
+  transition: 5s;
 }
 
-.main .card .card-title:hover {
+.main .card:hover {
   color: #006cc5;
-  font-size: 45px;
+  /* min-height: 4000px; */
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 a:link {
@@ -85,8 +90,6 @@ a:link {
 /* pizzas main */
 
 .main2 .carousel {
-  padding-left: 200px;
-  padding-right: 200px;
   background-color: #d1d6da;
   box-shadow: 0 10px 5px 1px rgb(157, 160, 161);
 }
@@ -99,4 +102,10 @@ a:link {
 .main2 .card:hover {
   box-shadow: 0 8px 8px 8px rgb(157, 160, 161);
   transform: scale(1.1);
+}
+
+.row-cols-md-3 {
+  width: 80%;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
