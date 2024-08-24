@@ -109,3 +109,8 @@ a:link {
   margin-left: 10rem;
   margin-right: 10rem;
 }
+
+.main2 .card > img {
+  max-height: 250px;
+  object-fit: cover;
+}
