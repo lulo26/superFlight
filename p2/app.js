@@ -1,0 +1,1 @@
+localStorage.getItem(document.getElementById(""));
