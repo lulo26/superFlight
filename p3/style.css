@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "digital-clock-font";
+  src: url("./digital-7.regular.ttf");
+}
+
+body {
+  background-color: #c2c0a6;
+  display: grid;
+  justify-content: center;
+  font-family: "digital-clock-font";
+}
+.btn {
+  background-color: #6a8c69;
+  -ms-flex-align: center;
+  flex-grow: 50;
+  border: none;
+  font-size: 30px;
+}
+.btn-primary:hover {
+  background-color: #53736a;
+}
+
+.btn-primary:active {
+  background-color: #024554 !important;
+}
+
+.mt-5 {
+  font-size: 70px;
+}
+
+.mt-5 .Miliseconds {
+  font-size: 30px;
+}
