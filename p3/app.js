@@ -26,7 +26,7 @@ function startTimer() {
   if (seconds > 9) {
     HTMLSeconds.innerHTML = seconds;
   }
-  if (seconds > 99) {
+  if (seconds > 60) {
     minutes++;
     HTMLMinutes.innerHTML = "0" + minutes;
     seconds = 0;
