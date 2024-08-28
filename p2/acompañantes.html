@@ -17,181 +17,190 @@
     />
   </head>
   <body>
-    <!--Header-->
-    <div class="header">
-      <img src="./img/pizzalogo.png" alt="" srcset="" />
-      <h3>LOS MAGOS DE LA PIZZA</h3>
+    <div id="acomp" class="page">
+      <!--Header-->
+      <div class="header">
+        <img src="./img/pizzalogo.png" alt="" srcset="" />
+        <h3>LOS MAGOS DE LA PIZZA</h3>
+      </div>
+      <!--End of header-->
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Ver todos |</a
+              >
+              <a class="nav-link" href="./pizzas.html"
+                >Escoge tu especialidad preferida |</a
+              >
+              <a class="nav-link" href="./acompañantes.html">acompañantes |</a>
+              <a class="nav-link" href="./bebidas.html">bebidas |</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--End of navbar-->
+
+      <!--Main-->
+      <div class="main2">
+        <!--Cards-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img
+                src="./img/cheeseSticks.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Quesitos de dedo</h5>
+                <p class="card-text">
+                  Deliciosos Deditos de queso mozzarella con salsa de tomate de
+                  la casa.
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="deditos"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img
+                src="./img/Garlic-Knots.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nudos de ajo</h5>
+                <p class="card-text">
+                  Panesitos en forma de nudo con salsa de ajo.
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="nudosAjo"
+                      id="inputPassword6"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/arepa-frita.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Arepa frita</h5>
+                <p class="card-text">Arepa frita fresca.</p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="arepa"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/bacon.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Tocinos bites</h5>
+                <p class="card-text">Nuditos de tocino.</p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="tocino"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/mondongo.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Mondongo bites</h5>
+                <p class="card-text">
+                  trocitos de mondongo perfecto acompañante con cualquier pizza.
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="mondongo"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--End of cards-->
+      </div>
     </div>
-    <!--End of header-->
-
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="./index.html"
-              >Ver todos |</a
-            >
-            <a class="nav-link" href="./pizzas.html"
-              >Escoge tu especialidad preferida |</a
-            >
-            <a class="nav-link" href="./acompañantes.html">acompañantes |</a>
-            <a class="nav-link" href="./bebidas.html">bebidas |</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!--End of navbar-->
-
-    <!--Main-->
-    <div class="main2">
-      <!--Cards-->
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col d-flex justify-content-center">
-          <div class="card text-center" style="width: 28rem">
-            <img src="./img/cheeseSticks.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Quesitos de dedo</h5>
-              <p class="card-text">
-                Deliciosos Deditos de queso mozzarella con salsa de tomate de la
-                casa.
-              </p>
-              <div class="row g-3">
-                <div class="col-auto">
-                  <input
-                    type="number"
-                    id="deditos"
-                    class="form-control"
-                    aria-describedby="passwordHelpInline"
-                  />
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-3">
-                    agregar al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="card text-center" style="width: 28rem">
-            <img src="./img/Garlic-Knots.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Nudos de ajo</h5>
-              <p class="card-text">
-                Panesitos en forma de nudo con salsa de ajo.
-              </p>
-              <div class="row g-3">
-                <div class="col-auto">
-                  <input
-                    type="nudosAjo"
-                    id="inputPassword6"
-                    class="form-control"
-                    aria-describedby="passwordHelpInline"
-                  />
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-3">
-                    agregar al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="card text-center" style="width: 28rem">
-            <img src="./img/arepa-frita.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Arepa frita</h5>
-              <p class="card-text">Arepa frita fresca.</p>
-              <div class="row g-3">
-                <div class="col-auto">
-                  <input
-                    type="number"
-                    id="arepa"
-                    class="form-control"
-                    aria-describedby="passwordHelpInline"
-                  />
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-3">
-                    agregar al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col d-flex justify-content-center">
-          <div class="card text-center" style="width: 28rem">
-            <img src="./img/bacon.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Tocinos bites</h5>
-              <p class="card-text">Nuditos de tocino.</p>
-              <div class="row g-3">
-                <div class="col-auto">
-                  <input
-                    type="number"
-                    id="tocino"
-                    class="form-control"
-                    aria-describedby="passwordHelpInline"
-                  />
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-3">
-                    agregar al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="card text-center" style="width: 28rem">
-            <img src="./img/mondongo.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Mondongo bites</h5>
-              <p class="card-text">
-                trocitos de mondongo perfecto acompañante con cualquier pizza.
-              </p>
-              <div class="row g-3">
-                <div class="col-auto">
-                  <input
-                    type="number"
-                    id="mondongo"
-                    class="form-control"
-                    aria-describedby="passwordHelpInline"
-                  />
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-3">
-                    agregar al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--End of cards-->
-    </div>
-
     <!--End of main-->
 
     <script

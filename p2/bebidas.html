@@ -17,185 +17,186 @@
     />
   </head>
   <body>
-    <!--Header-->
-    <div class="header">
-      <img src="./img/pizzalogo.png" alt="" srcset="" />
-      <h3>LOS MAGOS DE LA PIZZA</h3>
+    <div id="bebidas" class="page">
+      <!--Header-->
+      <div class="header">
+        <img src="./img/pizzalogo.png" alt="" srcset="" />
+        <h3>LOS MAGOS DE LA PIZZA</h3>
+      </div>
+      <!--End of header-->
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Ver todos |</a
+              >
+              <a class="nav-link" href="./pizzas.html"
+                >Escoge tu especialidad preferida |</a
+              >
+              <a class="nav-link" href="./acompañantes.html">acompañantes |</a>
+              <a class="nav-link" href="./bebidas.html">bebidas |</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--End of navbar-->
+
+      <!--Main-->
+      <div class="main2">
+        <!--Cards-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/water.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Agua</h5>
+                <p class="card-text">
+                  Agua fresca de la mejor calida traida de camelford inglaterra
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="agua"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/kelpSoda.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Dr. Kelp zero</h5>
+                <p class="card-text">
+                  Refrescante bebida Dr. Kelp versión dietética baja en calorías
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="kelp"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/uranium.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Uranio puro</h5>
+                <p class="card-text">
+                  Delicioso Uranio listo para digerir, delicioso sabor dulce y
+                  ácido
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="uranio"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/coca_cola_.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Coca Cola</h5>
+                <p class="card-text">Coca Cola fría estilo clásico</p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="cocaCola"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/aguapanela.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Aguapanela con limón</h5>
+                <p class="card-text">
+                  Fresca limonada de aguapanela con limones recién molidos
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="aguapanela"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--End of cards-->
+      </div>
+
+      <!--End of main-->
     </div>
-    <!--End of header-->
-
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="./index.html"
-              >Ver todos |</a
-            >
-            <a class="nav-link" href="./pizzas.html"
-              >Escoge tu especialidad preferida |</a
-            >
-            <a class="nav-link" href="./acompañantes.html">acompañantes |</a>
-            <a class="nav-link" href="./bebidas.html">bebidas |</a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!--End of navbar-->
-
-    <!--Main-->
-    <div class="main2">
-      <!--Cards-->
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col d-flex justify-content-center">
-          <div class="card text-center" style="width: 28rem">
-            <img src="./img/water.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Agua</h5>
-              <p class="card-text">
-                Agua fresca de la mejor calida traida de camelford inglaterra
-              </p>
-              <div class="row g-3">
-                <div class="col-auto">
-                  <input
-                    type="number"
-                    id="agua"
-                    class="form-control"
-                    aria-describedby="passwordHelpInline"
-                  />
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-3">
-                    agregar al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="card text-center" style="width: 28rem">
-            <img src="./img/kelpSoda.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Dr. Kelp zero</h5>
-              <p class="card-text">
-                Refrescante bebida Dr. Kelp versión dietética baja en calorías
-              </p>
-              <div class="row g-3">
-                <div class="col-auto">
-                  <input
-                    type="number"
-                    id="kelp"
-                    class="form-control"
-                    aria-describedby="passwordHelpInline"
-                  />
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-3">
-                    agregar al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="card text-center" style="width: 28rem">
-            <img src="./img/uranium.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Uranio puro</h5>
-              <p class="card-text">
-                Delicioso Uranio listo para digerir, delicioso sabor dulce y
-                ácido
-              </p>
-              <div class="row g-3">
-                <div class="col-auto">
-                  <input
-                    type="number"
-                    id="uranio"
-                    class="form-control"
-                    aria-describedby="passwordHelpInline"
-                  />
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-3">
-                    agregar al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col d-flex justify-content-center">
-          <div class="card text-center" style="width: 28rem">
-            <img src="./img/coca_cola_.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Coca Cola</h5>
-              <p class="card-text">Coca Cola fría estilo clásico</p>
-              <div class="row g-3">
-                <div class="col-auto">
-                  <input
-                    type="number"
-                    id="cocaCola"
-                    class="form-control"
-                    aria-describedby="passwordHelpInline"
-                  />
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-3">
-                    agregar al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="card text-center" style="width: 28rem">
-            <img src="./img/aguapanela.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Aguapanela con limón</h5>
-              <p class="card-text">
-                Fresca limonada de aguapanela con limones recién molidos
-              </p>
-              <div class="row g-3">
-                <div class="col-auto">
-                  <input
-                    type="number"
-                    id="aguapanela"
-                    class="form-control"
-                    aria-describedby="passwordHelpInline"
-                  />
-                </div>
-                <div class="col-auto">
-                  <button type="submit" class="btn btn-primary mb-3">
-                    agregar al carrito
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--End of cards-->
-    </div>
-
-    <!--End of main-->
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

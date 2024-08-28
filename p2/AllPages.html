@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/futura-std-4?styles=52567"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!----------------------------------------------------------------------->
+
+    <!--Page one: index-->
+
+    <div id="index" class="page">
+      <!--Header-->
+      <div class="header">
+        <img src="./img/pizzalogo.png" alt="" srcset="" />
+        <h3>LOS MAGOS DE LA PIZZA</h3>
+      </div>
+      <!--End of header-->
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link"
+                aria-current="page"
+                onclick="openPage('index')"
+                >Ver todos |</a
+              >
+              <a class="nav-link" onclick="openPage('pizza')"
+                >Escoge tu especialidad preferida |</a
+              >
+              <a class="nav-link" onclick="openPage('acomp')">Acompañantes |</a>
+              <a class="nav-link" onclick="openPage('bebidas')">Bebidas |</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--End of navbar-->
+
+      <!--Main-->
+      <div class="main">
+        <p>
+          Este es nuestro menú nacional, ofertas y los productos disponibles
+          para ti pueden variar
+        </p>
+        <div
+          class="card mb-3"
+          style="max-width: 100%"
+          onclick="openPage('pizza')"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="./img/pizza1.png"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="width: 300px; object-fit: fill"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Escoge tu especialidad preferida</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card mb-3"
+          style="max-width: 100%"
+          onclick="openPage('acomp')"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="./img/cheesesticks.gif"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="width: 300px; object-fit: fill"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Acompañantes</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card mb-3"
+          style="max-width: 100%"
+          onclick="openPage('bebidas')"
+        >
+          <div class="row g-0">
+            <div class="col-md-2">
+              <img
+                src="./img/drinks.png"
+                class="img-fluid rounded-start"
+                alt="..."
+                style="width: 180px; object-fit: fill"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Bebidas</h5>
+
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <audio controls autoplay>
+          <source src="./img/Lipps Inc - Funkytown.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+      <!--End of main-->
+
+      <!----------------------------------------------------------------------->
+      <!--Page two: pizza-->
+    </div>
+    <div id="pizza" class="page" style="display: none">
+      <!--Header-->
+      <div class="header">
+        <img src="./img/pizzalogo.png" alt="" srcset="" />
+        <h3>LOS MAGOS DE LA PIZZA</h3>
+      </div>
+      <!--End of header-->
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link"
+                aria-current="page"
+                onclick="openPage('index')"
+                >Ver todos |</a
+              >
+              <a class="nav-link" onclick="openPage('pizza')"
+                >Escoge tu especialidad preferida |</a
+              >
+              <a class="nav-link" onclick="openPage('acomp')">Acompañantes |</a>
+              <a class="nav-link" onclick="openPage('bebidas')">Bebidas |</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--End of navbar-->
+
+      <!--Main-->
+      <div class="main2">
+        <!--Cards-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img
+                src="./img/pizza-hawaiana.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pizza Hawaiana</h5>
+                <p class="card-text">
+                  Deliciosa pizza con queso, jamón y piña.
+                </p>
+                <div class="row g-3">
+                  <input
+                    type="number"
+                    id="hawaiana"
+                    class="form-control"
+                    aria-describedby="passwordHelpInline"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img
+                src="./img/pizza-con-salami.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pizza de Salami</h5>
+                <p class="card-text">Pizza con queso y salami.</p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="salami"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img
+                src="./img/Mushroom-Pizza.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pizza de pollo con champiñones</h5>
+                <p class="card-text">pizza con queso, pollo y champiñones.</p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="champinones"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img
+                src="./img/neapolitan-pizza.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pizza napolitana</h5>
+                <p class="card-text">
+                  Pizza con queso y tomate deliciosa selección vegetariana.
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="napolitana"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/beanspizza.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Pizza inglesa</h5>
+                <p class="card-text">
+                  Pizza estilo reino unido con frijoles al gusto.
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="inglesa"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--End of cards-->
+      </div>
+
+      <!--End of main-->
+    </div>
+    <!----------------------------------------------------------------------->
+    <!--Page three: acompañantes-->
+    <div id="acomp" class="page" style="display: none">
+      <!--Header-->
+      <div class="header">
+        <img src="./img/pizzalogo.png" alt="" srcset="" />
+        <h3>LOS MAGOS DE LA PIZZA</h3>
+      </div>
+      <!--End of header-->
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link"
+                aria-current="page"
+                onclick="openPage('index')"
+              >
+                Ver todos |
+              </a>
+              <a class="nav-link" onclick="openPage('pizza')">
+                Escoge tu especialidad preferida |
+              </a>
+              <a class="nav-link" onclick="openPage('acomp')">
+                Acompañantes |</a
+              >
+              <a class="nav-link" onclick="openPage('bebidas')"> Bebidas |</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--End of navbar-->
+
+      <!--Main-->
+      <div class="main2">
+        <!--Cards-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img
+                src="./img/cheeseSticks.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Quesitos de dedo</h5>
+                <p class="card-text">
+                  Deliciosos Deditos de queso mozzarella con salsa de tomate de
+                  la casa.
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="deditos"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img
+                src="./img/Garlic-Knots.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nudos de ajo</h5>
+                <p class="card-text">
+                  Panesitos en forma de nudo con salsa de ajo.
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="nudosAjo"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/arepa-frita.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Arepa frita</h5>
+                <p class="card-text">Arepa frita fresca.</p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="arepa"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/bacon.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Tocinos bites</h5>
+                <p class="card-text">Nuditos de tocino.</p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="tocino"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/mondongo.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Mondongo bites</h5>
+                <p class="card-text">
+                  trocitos de mondongo perfecto acompañante con cualquier pizza.
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="mondongo"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--End of cards-->
+      </div>
+    </div>
+    <!--End of main-->
+
+    <!----------------------------------------------------------------------->
+    <!--Page four: bebidas-->
+    <div id="bebidas" class="page" style="display: none">
+      <!--Header-->
+      <div class="header">
+        <img src="./img/pizzalogo.png" alt="" srcset="" />
+        <h3>LOS MAGOS DE LA PIZZA</h3>
+      </div>
+      <!--End of header-->
+
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link"
+                aria-current="page"
+                onclick="openPage('index')"
+              >
+                Ver todos |
+              </a>
+              <a class="nav-link" onclick="openPage('pizza')">
+                Escoge tu especialidad preferida |
+              </a>
+              <a class="nav-link" onclick="openPage('acomp')">
+                Acompañantes |</a
+              >
+              <a class="nav-link" onclick="openPage('bebidas')"> Bebidas |</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--End of navbar-->
+
+      <!--Main-->
+      <div class="main2">
+        <!--Cards-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/water.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Agua</h5>
+                <p class="card-text">
+                  Agua fresca de la mejor calida traida de camelford inglaterra
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="agua"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/kelpSoda.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Dr. Kelp zero</h5>
+                <p class="card-text">
+                  Refrescante bebida Dr. Kelp versión dietética baja en calorías
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="kelp"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/uranium.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Uranio puro</h5>
+                <p class="card-text">
+                  Delicioso Uranio listo para digerir, delicioso sabor dulce y
+                  ácido
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="uranio"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/coca_cola_.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Coca Cola</h5>
+                <p class="card-text">Coca Cola fría estilo clásico</p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="cocaCola"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+            <div class="card text-center" style="width: 28rem">
+              <img src="./img/aguapanela.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Aguapanela con limón</h5>
+                <p class="card-text">
+                  Fresca limonada de aguapanela con limones recién molidos
+                </p>
+                <div class="row g-3">
+                  <div class="col-auto">
+                    <input
+                      type="number"
+                      id="aguapanela"
+                      class="form-control"
+                      aria-describedby="passwordHelpInline"
+                    />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-3">
+                      agregar al carrito
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--End of cards-->
+      </div>
+
+      <!--End of main-->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
