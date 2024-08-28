@@ -17,48 +17,47 @@
     />
   </head>
   <body>
-    <div id="pizza" class="page">
-      <!--Header-->
-      <div class="header">
-        <img src="./img/pizzalogo.png" alt="" srcset="" />
-        <h3>LOS MAGOS DE LA PIZZA</h3>
-      </div>
-      <!--End of header-->
+    <!--Header-->
+    <div class="header">
+      <img src="./img/pizzalogo.png" alt="" srcset="" />
+      <h3>LOS MAGOS DE LA PIZZA</h3>
+    </div>
+    <!--End of header-->
 
-      <!--Navbar-->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="./index.html"
-                >Ver todos |</a
-              >
-              <a class="nav-link" href="./pizzas.html"
-                >Escoge tu especialidad preferida |</a
-              >
-              <a class="nav-link" href="./acompañantes.html">acompañantes |</a>
-              <a class="nav-link" href="./bebidas.html">bebidas |</a>
-            </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="./index.html"
+              >Ver todos |</a
+            >
+            <a class="nav-link" href="./pizzas.html"
+              >Escoge tu especialidad preferida |</a
+            >
+            <a class="nav-link" href="./acompañantes.html">acompañantes |</a>
+            <a class="nav-link" href="./bebidas.html">bebidas |</a>
           </div>
         </div>
-      </nav>
-      <!--End of navbar-->
+      </div>
+    </nav>
+    <!--End of navbar-->
 
-      <!--Main-->
-      <div class="main2">
-        <!--carousel-->
-        <!--      <div id="carouselExample" class="carousel slide">
+    <!--Main-->
+    <div class="main2">
+      <!--carousel-->
+      <!--      <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
@@ -105,158 +104,175 @@
         </button>
       </div>
       -->
-        <!--End of carousel-->
+      <!--End of carousel-->
 
-        <!--Cards-->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col d-flex justify-content-center">
-            <div class="card text-center" style="width: 28rem">
-              <img
-                src="./img/pizza-hawaiana.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Pizza Hawaiana</h5>
-                <p class="card-text">
-                  Deliciosa pizza con queso, jamón y piña.
-                </p>
-                <div class="row g-3">
-                  <div class="col-auto">
-                    <input
-                      type="number"
-                      id="hawaiana"
-                      class="form-control"
-                      aria-describedby="passwordHelpInline"
-                    />
-                  </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-3">
-                      agregar al carrito
-                    </button>
-                  </div>
+      <!--Cards-->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col d-flex justify-content-center">
+          <div class="card text-center" style="width: 28rem">
+            <img
+              src="./img/pizza-hawaiana.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pizza Hawaiana</h5>
+              <p class="card-text">Deliciosa pizza con queso, jamón y piña.</p>
+              <div class="row g-3">
+                <div class="col-auto">
+                  <input
+                    type="number"
+                    id="hawaiana"
+                    class="form-control"
+                    aria-describedby="passwordHelpInline"
+                  />
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="card text-center" style="width: 28rem">
-              <img
-                src="./img/pizza-con-salami.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Pizza de Salami</h5>
-                <p class="card-text">Pizza con queso y salami.</p>
-                <div class="row g-3">
-                  <div class="col-auto">
-                    <input
-                      type="number"
-                      id="salami"
-                      class="form-control"
-                      aria-describedby="passwordHelpInline"
-                    />
-                  </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-3">
-                      agregar al carrito
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="card text-center" style="width: 28rem">
-              <img
-                src="./img/Mushroom-Pizza.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Pizza de pollo con champiñones</h5>
-                <p class="card-text">pizza con queso, pollo y champiñones.</p>
-                <div class="row g-3">
-                  <div class="col-auto">
-                    <input
-                      type="number"
-                      id="champinones"
-                      class="form-control"
-                      aria-describedby="passwordHelpInline"
-                    />
-                  </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-3">
-                      agregar al carrito
-                    </button>
-                  </div>
+                <div class="col-auto">
+                  <button
+                    type="submit"
+                    class="btn btn-primary mb-3"
+                    id="btnHawaiana"
+                  >
+                    agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col d-flex justify-content-center">
-            <div class="card text-center" style="width: 28rem">
-              <img
-                src="./img/neapolitan-pizza.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Pizza napolitana</h5>
-                <p class="card-text">
-                  Pizza con queso y tomate deliciosa selección vegetariana.
-                </p>
-                <div class="row g-3">
-                  <div class="col-auto">
-                    <input
-                      type="number"
-                      id="napolitana"
-                      class="form-control"
-                      aria-describedby="passwordHelpInline"
-                    />
-                  </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-3">
-                      agregar al carrito
-                    </button>
-                  </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card text-center" style="width: 28rem">
+            <img
+              src="./img/pizza-con-salami.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pizza de Salami</h5>
+              <p class="card-text">Pizza con queso y salami.</p>
+              <div class="row g-3">
+                <div class="col-auto">
+                  <input
+                    type="number"
+                    id="salami"
+                    class="form-control"
+                    aria-describedby="passwordHelpInline"
+                  />
                 </div>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="card text-center" style="width: 28rem">
-              <img src="./img/beanspizza.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Pizza inglesa</h5>
-                <p class="card-text">
-                  Pizza estilo reino unido con frijoles al gusto.
-                </p>
-                <div class="row g-3">
-                  <div class="col-auto">
-                    <input
-                      type="number"
-                      id="inglesa"
-                      class="form-control"
-                      aria-describedby="passwordHelpInline"
-                    />
-                  </div>
-                  <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-3">
-                      agregar al carrito
-                    </button>
-                  </div>
+                <div class="col-auto">
+                  <button
+                    type="submit"
+                    class="btn btn-primary mb-3"
+                    id="btnSalami"
+                  >
+                    agregar al carrito
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        <!--End of cards-->
+        <div class="col d-flex justify-content-center">
+          <div class="card text-center" style="width: 28rem">
+            <img
+              src="./img/Mushroom-Pizza.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pizza de pollo con champiñones</h5>
+              <p class="card-text">pizza con queso, pollo y champiñones.</p>
+              <div class="row g-3">
+                <div class="col-auto">
+                  <input
+                    type="number"
+                    id="champinones"
+                    class="form-control"
+                    aria-describedby="passwordHelpInline"
+                  />
+                </div>
+                <div class="col-auto">
+                  <button
+                    type="submit"
+                    class="btn btn-primary mb-3"
+                    id="btnChampinones"
+                  >
+                    agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col d-flex justify-content-center">
+          <div class="card text-center" style="width: 28rem">
+            <img
+              src="./img/neapolitan-pizza.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pizza napolitana</h5>
+              <p class="card-text">
+                Pizza con queso y tomate deliciosa selección vegetariana.
+              </p>
+              <div class="row g-3">
+                <div class="col-auto">
+                  <input
+                    type="number"
+                    id="napolitana"
+                    class="form-control"
+                    aria-describedby="passwordHelpInline"
+                  />
+                </div>
+                <div class="col-auto">
+                  <button
+                    type="submit"
+                    class="btn btn-primary mb-3"
+                    id="btnNapolitana"
+                  >
+                    agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+          <div class="card text-center" style="width: 28rem">
+            <img src="./img/beanspizza.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Pizza inglesa</h5>
+              <p class="card-text">
+                Pizza estilo reino unido con frijoles al gusto.
+              </p>
+              <div class="row g-3">
+                <div class="col-auto">
+                  <input
+                    type="number"
+                    id="inglesa"
+                    class="form-control"
+                    aria-describedby="passwordHelpInline"
+                  />
+                </div>
+                <div class="col-auto">
+                  <button
+                    type="submit"
+                    class="btn btn-primary mb-3"
+                    id="btnInglesa"
+                  >
+                    agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--End of cards-->
 
       <!--End of main-->
     </div>
